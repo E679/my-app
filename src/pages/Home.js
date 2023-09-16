@@ -20,7 +20,7 @@ const loadUsers=async()=>{
     setUsers(result.data);
     }
     catch(error){
-        console.log('User list is empty',error);
+        console.error('User list is empty :',error.message);
         alert("There is No Data here please click on Add User");
     }
 }
